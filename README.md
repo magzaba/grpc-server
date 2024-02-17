@@ -24,3 +24,22 @@ And responses with
 
  - `PingPongServiceImpl` service is implemented
  - `GrpcServer` is created to listen on 8080 port
+
+#### Task 1.4 - Application Test
+- the server has been started
+
+  ![SERVER STARTED](images/task1-grpc-server-started.png)
+
+
+- the client has been started
+- message received by server
+
+  ![MESSAGE RECEIVED BY SERVER](images/task1-grpc-message-received-by-server.png)
+
+- message received by client
+
+  ![MESSAGE RECEIVED BY CLIENT](images/task1-grpc-message-received-by-client.png)
+ 
+- the server has been shutdown 
+
+  ![SERVER SUTDOWN](images/task1-grpc-server-shutdown.png)
