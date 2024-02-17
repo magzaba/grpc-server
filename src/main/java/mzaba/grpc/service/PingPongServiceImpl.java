@@ -11,9 +11,9 @@ public class PingPongServiceImpl extends PingPongServiceGrpc.PingPongServiceImpl
         var messageFromClient = request.getMessage();
         var clientUsername = request.getUsername();
         var serverResponse = PongResponse.newBuilder()
-                .setMessage("Pong from Java gRPC Server to " + clientUsername)
+                .setMessage("'PONG' from Java gRPC Server to " + clientUsername)
                 .build();
-        System.out.println("Received message: '" + messageFromClient + "' from Client username " + clientUsername);
+        System.out.println("Received message: '" + messageFromClient + "' with username '" + clientUsername + "'");
         responseObserver.onNext(serverResponse);
         responseObserver.onCompleted();
     }
